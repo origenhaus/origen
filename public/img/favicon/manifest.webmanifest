@@ -1,0 +1,11 @@
+{
+  "name": "Origen.haus — Aquí es donde todo empieza",
+  "short_name": "Origen",
+  "icons": [
+    { "src": "/img/favicon/android-icon-192.png", "type": "image/png", "sizes": "192x192" },
+    { "src": "/img/favicon/android-icon-512.png", "type": "image/png", "sizes": "512x512" }
+  ],
+  "theme_color": "#FDAC0B",
+  "background_color": "#FDAC0B",
+  "display": "standalone"
+}

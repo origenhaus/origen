@@ -1,0 +1,51 @@
+---
+import Loader from "../components/Loader.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Cursor from "../components/Cursor.astro";
+
+const {
+  title = "Origen.haus — Aquí es donde todo empieza",
+  description = "Origen — Estudio creativo de branding, diseño web y contenido de marca",
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>{title}</title>
+    <meta name="description" content={description} />
+
+    <link rel="icon" href="/img/favicon/favicon.ico" sizes="any" />
+    <link rel="icon" href="/img/favicon/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/img/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/img/favicon/manifest.webmanifest" />
+
+    <link rel="stylesheet" href="/css/loader.min.css" />
+    <link rel="stylesheet" href="/css/plugins.min.css" />
+    <link rel="stylesheet" href="/css/main.min.css" />
+
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#FDAC0B" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0f0f0f" />
+    <meta name="msapplication-navbutton-color" content="#0f0f0f" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  </head>
+
+  <body>
+    <Loader />
+    <Header />
+
+    <slot />
+
+    <Footer />
+    <Cursor />
+
+<script src="/js/libs.min.js" is:inline></script>
+<script src="/js/app.min.js" is:inline></script>
+  </body>
+</html>
