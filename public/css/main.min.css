@@ -5896,7 +5896,7 @@ form textarea:required:valid {
 .origen-menu__caption p {
   font: normal 500 1.4rem/1.4 var(--_font-accent);
   text-transform: uppercase;
-  letter-spacing: -.05rem;
+  letter-spacing: -.001rem;
   color: var(--t-opp-medium)
 }
 
@@ -6396,7 +6396,7 @@ form textarea:required:valid {
   gap: .5rem;
   font: normal 500 1.4rem/1.6 var(--_font-accent);
   text-transform: uppercase;
-  letter-spacing: -.05rem;
+  letter-spacing: -.001rem;
   color: var(--t-opp-medium);
   overflow: hidden
 }
