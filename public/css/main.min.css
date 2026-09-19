@@ -22119,22 +22119,23 @@ form textarea:required:valid {
   object-fit: contain
 }
 
-/* ORIGEN LOADER - Astro */
-
-.origen-loader {
-    opacity: 1;
-    visibility: visible;
-    transition: opacity 0.6s ease, visibility 0.6s ease;
-}
+/* ORIGEN - Loader fix */
 
 .origen-loader.is-loaded {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
 }
 
-body.origen-loaded .origen-loader {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+.origen-page-transition.is-loaded {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+}
+
+body.origen-loaded .origen-loader,
+body.origen-loaded .origen-page-transition {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
 }

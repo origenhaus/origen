@@ -26,34 +26,22 @@
 </div>
 
 <script>
-    console.log("ORIGEN LOADER FUNCIONANDO");
-  const loader = document.querySelector("#origen-loader");
-  const count = loader?.querySelector(".count__text");
+  console.log("LOADER: script iniciado");
 
-  if (loader && count) {
-    let progress = 0;
+  setTimeout(() => {
+    console.log("LOADER: ocultando");
 
-    const updateProgress = () => {
-      progress += Math.floor(Math.random() * 8) + 3;
+    const loader = document.querySelector("#origen-loader");
+    const transition = document.querySelector(".origen-page-transition");
 
-      if (progress >= 100) {
-        progress = 100;
-      }
+    if (loader) {
+      loader.classList.add("is-loaded");
+    }
 
-      count.textContent = String(progress);
+    if (transition) {
+      transition.classList.add("is-loaded");
+    }
 
-      if (progress >= 100) {
-        setTimeout(() => {
-          loader.classList.add("is-loaded");
-          document.body.classList.add("origen-loaded");
-        }, 300);
-
-        return;
-      }
-
-      setTimeout(updateProgress, 80);
-    };
-
-    updateProgress();
-  }
+    document.body.classList.add("origen-loaded");
+  }, 3000);
 </script>
