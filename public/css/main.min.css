@@ -22119,7 +22119,7 @@ form textarea:required:valid {
   object-fit: contain
 }
 
-/* ORIGEN - Loader fix */
+
 
 .origen-loader.is-loaded {
     opacity: 0 !important;
@@ -22127,14 +22127,7 @@ form textarea:required:valid {
     pointer-events: none !important;
 }
 
-.origen-page-transition.is-loaded {
-    opacity: 0 !important;
-    visibility: hidden !important;
-    pointer-events: none !important;
-}
-
-body.origen-loaded .origen-loader,
-body.origen-loaded .origen-page-transition {
+body.origen-loaded .origen-loader {
     opacity: 0 !important;
     visibility: hidden !important;
     pointer-events: none !important;
