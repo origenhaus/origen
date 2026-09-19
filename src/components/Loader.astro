@@ -1,22 +1,59 @@
 <div class="origen-page-transition"></div>
-    <div class="origen-loader">
-      <div class="origen-loader__top">
-        <span>origen.haus</span>
-      </div>
-      <div class="origen-loader__images">
-        <img src="/img/loa_1.webp" alt="Origen loader image">
-        <img src="/img/loa_2.webp" alt="Origen loader image">
-        <img src="/img/loa_3.webp" alt="Origen loader image">
-        <img src="/img/loa_4.webp" alt="Origen loader image">
-        <img src="/img/loa_5.webp" alt="Origen loader image">
-        <img src="/img/loa_6.webp" alt="Origen loader image">
-        <img src="/img/loa_7.webp" alt="Origen loader image">
-      </div>
-      <div class="origen-loader__bottom">
-        <div class="origen-loader__count">
-          <span class="count__text">0</span>
-          <span class="count__percent">%</span>
-        </div>
-        <span class="origen-loader__caption">Cargando</span>
-      </div>
+
+<div class="origen-loader" id="origen-loader">
+  <div class="origen-loader__top">
+    <span>origen.haus</span>
+  </div>
+
+  <div class="origen-loader__images">
+    <img src="/img/loa_1.webp" alt="Origen loader image">
+    <img src="/img/loa_2.webp" alt="Origen loader image">
+    <img src="/img/loa_3.webp" alt="Origen loader image">
+    <img src="/img/loa_4.webp" alt="Origen loader image">
+    <img src="/img/loa_5.webp" alt="Origen loader image">
+    <img src="/img/loa_6.webp" alt="Origen loader image">
+    <img src="/img/loa_7.webp" alt="Origen loader image">
+  </div>
+
+  <div class="origen-loader__bottom">
+    <div class="origen-loader__count">
+      <span class="count__text">0</span>
+      <span class="count__percent">%</span>
     </div>
+
+    <span class="origen-loader__caption">Cargando</span>
+  </div>
+</div>
+
+<script>
+    console.log("ORIGEN LOADER FUNCIONANDO");
+  const loader = document.querySelector("#origen-loader");
+  const count = loader?.querySelector(".count__text");
+
+  if (loader && count) {
+    let progress = 0;
+
+    const updateProgress = () => {
+      progress += Math.floor(Math.random() * 8) + 3;
+
+      if (progress >= 100) {
+        progress = 100;
+      }
+
+      count.textContent = String(progress);
+
+      if (progress >= 100) {
+        setTimeout(() => {
+          loader.classList.add("is-loaded");
+          document.body.classList.add("origen-loaded");
+        }, 300);
+
+        return;
+      }
+
+      setTimeout(updateProgress, 80);
+    };
+
+    updateProgress();
+  }
+</script>
