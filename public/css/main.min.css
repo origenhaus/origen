@@ -609,6 +609,10 @@ html.lenis body {
   background-color: var(--accent)
 }
 
+.bg-color-alt {
+  background-color: var(--base-tint--light)
+}
+
 .origen-app {
   position: relative;
   width: 100%
@@ -9564,16 +9568,12 @@ form textarea:required:valid {
   text-align: center
 }
 
-.origen-alt-font{
-  font-family: var(--_font-alt);
-  letter-spacing: 0;
-  color: var(--accent--light);
-}
+
 
 .origen-hero-05__headline h1 {
   font-size: 8rem;
   line-height: 1;
-  letter-spacing: -.3rem
+  letter-spacing: -0.3rem;
 }
 
 .origen-hero-05__headline h1 small {
