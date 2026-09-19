@@ -90,9 +90,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
+
+@font-face {
+  font-family: "OrigenFont";
+  src: url("/fonts/OrigenFont/origen-font.woff2") format("woff2"),
+       url("/fonts/OrigenFont/origen-font.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 :root {
   --_size: 1.6rem;
   --_font-default: "Instrument Sans", sans-serif;
+  --_font-alt: "OrigenFont", sans-serif;
   --_font-accent: "Instrument Serif", sans-serif;
   --_animspeed-fast: 0.1s;
   --_animspeed-medium: 0.3s;
@@ -9552,6 +9562,12 @@ form textarea:required:valid {
   -ms-flex-direction: column;
   flex-direction: column;
   text-align: center
+}
+
+.origen-alt-font{
+  font-family: var(--_font-alt);
+  letter-spacing: 0;
+  color: var(--accent--light);
 }
 
 .origen-hero-05__headline h1 {
