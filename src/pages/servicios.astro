@@ -1,12 +1,269 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import BlurAddon from "../components/BlurAddon.astro";
+import TalkSection from "../components/TalkSection.astro"
+
+const title = "Servicios";
 ---
 
-<MainLayout title="Servicios | Origen">
-  <section class="origen-section">
-    <div class="origen-container">
-      <h1>Servicios</h1>
-      <p>Aquí construiremos la página de servicios de Origen.</p>
-    </div>
-  </section>
+<MainLayout
+  title="Servicios | Origen.haus — Aquí es donde todo empieza"
+  description="Origen — Estudio creativo de branding, diseño web y contenido de marca">
+
+      <main id="origen-page-content" class="origen-page-content">
+      <BlurAddon />
+
+
+      <div class=" origen-section pinned-section">
+        <div class="pinned-section__inner">
+          <div class=" origen-container fullwidth-container">
+
+
+            <div class=" origen-block loading-wrap">
+              <div class="inner-headline fullheight">
+                <div class="inner-headline__bg">
+                  <img src="/img/backgrounds/1920x1280_bg01.webp" alt="Imagen de Origen.haus">
+                  <div class="inner-headline__cover"></div>
+                </div>
+                <div class=" origen-container grid-l-container">
+                  <div class="container-fluid p-0">
+                    <div class="row g-0">
+                      <div class="col-12  origen-grid-item">
+
+                        <div class="inner-headline__breadcrumbs loading-fade">
+                          <div class="breadcrumbs__nav permanent">
+                            <span>
+                              <a href="/">
+                                <span class=" origen-scramble">Inicio</span>
+                              </a>
+                            </span>
+                            <span class="current-item">Servicios
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="inner-headline__bottom">
+                  <div class=" origen-container grid-l-container">
+                    <div class="container-fluid p-0">
+                      <div class="row g-0">
+                        <div class="col-12">
+
+                          <div class="inner-headline__content has-medium-title">
+                            <div class="container-fluid p-0">
+                              <div class="row g-0">
+                                <div class="col-12 col-xl-10  origen-grid-item">
+                                  <div class="inner-headline__link loading-fade">
+                                    <a class="btn btn-line btn-line-permanent" href="#servicios">
+                                      <span class="btn-caption  origen-scramble">Servicios</span>
+                                    </a>
+                                  </div>
+                                  <div class="inner-headline__title">
+                                    <h1 class="medium permanent loading-split">Servicios<span> para ti y tu marca.</span></h1>
+                                  </div>
+                                </div>
+                                <div class="col-12 col-xl-2  origen-grid-item">
+                                  <div class="inner-headline__btngroup align-end-desktop tags-medium-title loading-fade">
+                                    <a class="btn btn-line-icon btn-line-icon-small btn-line-permanent slide-down" href="#services">
+                                      <span class="btn-caption  origen-scramble">Desliza para más</span>
+                                      <i>
+                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 18 18">
+                                          <path d="M18,10.8h-3.6v-3.6h3.6v3.6ZM7.2,14.4v3.6h3.6v-3.6h3.6v-3.6h-3.6V0h-3.6v10.8h-3.6v3.6s3.6,0,3.6,0ZM3.6,10.8v-3.6H0v3.6h3.6Z"/>
+                                        </svg>
+                                      </i>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="pinned-section__trigger"></div>
+        </div>
+      </div>
+
+      <div id="servicios" class=" origen-section">
+        <div class=" origen-container fullwidth-container">
+
+
+          <div class=" origen-block">
+            <div class=" origen-stack-services">
+
+              <div class=" origen-stack-services__card">
+                <div class="services-card__wrapper">
+
+                  <div class="services-card__content">
+                    <div class="services-card__info">
+                      <div class="services-card__subtitle">
+                        <span class="tag tag-s-mobile  origen-scramble">01 / Servicios</span>
+                      </div>
+                      <div class="services-card__title">
+                        <p>Branding</p>
+                      </div>
+                      <div class="services-card__tags">
+                        <div class="tags-column">
+                          <span class="tag tag-s-mobile  origen-scramble">Logo</span>
+                          <span class="tag tag-s-mobile  origen-scramble">Identidad corporativa</span>
+                          <span class="tag tag-s-mobile  origen-scramble">Papelería corporativa</span>
+                          <span class="tag tag-s-mobile  origen-scramble">Diseños para impresión</span>
+                        </div>
+                        <div class="tags-column">
+                          <span class="tag tag-s-mobile  origen-scramble">Packaging</span>
+                          <span class="tag tag-s-mobile  origen-scramble">Diseño de personajes</span>
+
+                        </div>
+                      </div>
+                    </div>
+                    <p class="t-large t-bold services-card__descr">Construimos identidades de marca que van más allá del logo.
+                      <span> Definimos quién eres, cómo te ves y cómo te sientes al conectar con tu audiencia — desde la estrategia hasta cada pieza visual.</span>
+                      <ul>
+                        <li>Estrategia de marca</li>
+                        <li>Diseño de logotipo</li>
+                        <li>Paleta de color y tipografía</li>
+                        <li>Sistema visual e identidad gráfica</li>
+                        <li>Manual de marca</li>
+                      </ul>
+                    </p>
+                  </div>
+
+                  <div class="services-card__image">
+                    <img src="/img/services/services-stack/s01.webp" alt="Imagen de Origen.haus">
+                    <div class="services-card__cover"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- single card -->
+              <div class=" origen-stack-services__card">
+                <div class="services-card__wrapper">
+                  <!-- content -->
+                  <div class="services-card__content">
+                    <div class="services-card__info">
+                      <div class="services-card__subtitle">
+                        <span class="tag tag-s-mobile  origen-scramble">02 / Servicios</span>
+                      </div>
+                      <div class="services-card__title">
+                        <p>Comunicaciones</p>
+                      </div>
+                      <div class="services-card__tags">
+                        <div class="tags-column">
+                          <span class="tag tag-s-mobile  origen-scramble">Asesoría</span>
+                          <span class="tag tag-s-mobile  origen-scramble">Estrategias de comunicación</span>
+                          <span class="tag tag-s-mobile  origen-scramble">Comunicación interna</span>
+                        </div>
+                        <div class="tags-column">
+                          <span class="tag tag-s-mobile  origen-scramble">Reportes de sostenibilidad</span>
+                          <span class="tag tag-s-mobile  origen-scramble">Storytelling</span>
+                          <span class="tag tag-s-mobile  origen-scramble">Relaciones públicas</span>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="t-bold t-large services-card__descr">Construimos la voz de tu marca y la ponemos a hablar donde importa. 
+                      <span> Mensajes claros, coherentes y con propósito, que conectan con tu audiencia en cada canal.</span>
+
+                    </p>
+                  </div>
+                  <!-- image -->
+                  <div class="services-card__image">
+                    <img src="/img/services/services-stack/s02.webp" alt="Imagen de Origen.haus">
+                    <div class="services-card__cover"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class=" origen-stack-services__card">
+                <div class="services-card__wrapper">
+
+                  <div class="services-card__content">
+                    <div class="services-card__info">
+                      <div class="services-card__subtitle">
+                        <span class="tag tag-s-mobile  origen-scramble">03 / Servicios</span>
+                      </div>
+                      <div class="services-card__title">
+                        <p>Diseño web</p>
+                      </div>
+                      <div class="services-card__tags">
+                        <div class="tags-column">
+                          <span class="tag tag-s-mobile  origen-scramble">E-commerce</span>
+                          <span class="tag tag-s-mobile  origen-scramble">Landings</span>
+                          <span class="tag tag-s-mobile  origen-scramble">Sitio web corporativo</span>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="t-bold t-large services-card__descr">Creamos sitios que representan tu marca y funcionan de verdad.
+                      <span> Desde WordPress y Shopify hasta stacks de desarrollo modernos, elegimos la tecnología que mejor se adapta a lo que tu proyecto necesita.</span>
+                    </p>
+                  </div>
+
+                  <div class="services-card__image">
+                    <img src="/img/services/services-stack/s04.webp" alt="Imagen de Origen.haus">
+                    <div class="services-card__cover"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class=" origen-stack-services__card">
+                <div class="services-card__wrapper">
+
+                  <div class="services-card__content">
+                    <div class="services-card__info">
+                      <div class="services-card__subtitle">
+                        <span class="tag tag-s-mobile  origen-scramble">04 / Servicios</span>
+                      </div>
+                      <div class="services-card__title">
+                        <p>Estrategia digital</p>
+                      </div>
+                      <div class="services-card__tags">
+                        <div class="tags-column">
+                          <span class="tag tag-s-mobile  origen-scramble">Marketing</span>
+                          <span class="tag tag-s-mobile  origen-scramble">Social media</span>
+                          <span class="tag tag-s-mobile  origen-scramble">SEO</span>
+                        </div>
+                        <div class="tags-column">
+                          <span class="tag tag-s-mobile  origen-scramble">Email</span>
+                          <span class="tag tag-s-mobile  origen-scramble">Campañas y Ads</span>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="t-bold t-large services-card__descr">Diseñamos un plan claro para que tu marca crezca en digital. 
+                      <span>Gestionamos redes sociales, contenido y marketing con foco en resultados, no solo en presencia.</span>
+                    </p>
+                  </div>
+
+                  <div class="services-card__image">
+                    <img src="/img/services/services-stack/s03.webp" alt="Imagen de Origen.haus">
+                    <div class="services-card__cover"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+
+
+      <div class=" origen-section blur-section">
+        <div class=" origen-container fullwidth-container">
+          <div class=" origen-divider">
+            <div class=" origen-divider__image divider-image-2 parallax-img"></div>
+          </div>
+        </div>
+      </div>
+<TalkSection />      
+      </main>
+
 </MainLayout>

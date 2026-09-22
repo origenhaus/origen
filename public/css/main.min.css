@@ -22153,3 +22153,8 @@ body.origen-loaded .origen-loader {
     visibility: hidden !important;
     pointer-events: none !important;
 }
+
+.margen-boton-arriba{
+  margin-top: 7rem;
+  margin-right: 3rem;
+}

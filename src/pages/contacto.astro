@@ -1,12 +1,101 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import BlurAddon from "../components/BlurAddon.astro";
+import TalkSection from "../components/TalkSection.astro"
+
+const title = "Contacto";
 ---
 
-<MainLayout title="Contacto | Origen">
-  <section class="origen-section">
-    <div class="origen-container">
-      <h1>Contacto</h1>
-      <p>Aquí construiremos la página de contacto de Origen.</p>
-    </div>
-  </section>
+<MainLayout
+  title="Contacto | Origen.haus — Aquí es donde todo empieza"
+  description="Origen — Estudio creativo de branding, diseño web y contenido de marca">
+
+          <main id="origen-page-content" class="origen-page-content inner-page-content">
+
+      <BlurAddon />
+
+
+      <div class="origen-section blur-section">
+        <div class="origen-container grid-l-container">
+
+
+          <div class="origen-block loading-wrap">
+            <div class="inner-headline">
+              <div class="container-fluid p-0">
+                <div class="row g-0">
+                  <div class="col-12 origen-grid-item">
+
+                    <div class="inner-headline__breadcrumbs loading-fade">
+                      <div class="breadcrumbs__nav">
+                        <span>
+                          <a href="/">
+                            <span class="origen-scramble">Inicio</span>
+                          </a>
+                        </span>
+                        <span class="current-item">Contacto
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+
+                    <div class="inner-headline__content has-medium-title">
+                      <div class="container-fluid p-0">
+                        <div class="row g-0">
+                          <div class="col-12 col-xl-6 origen-grid-item">
+                            <div class="inner-headline__title">
+                              <h1 class="medium loading-split">Hagamos que pase</h1>
+                            </div>
+                            <div class="inner-headline__subtitle">
+                              <p>Contacta con nosotros y <span>trabajemos juntos.</span></p>
+                            </div>
+                          </div>
+                          <div class="col-12 col-xl-6">
+
+                            <div class="inner-headline__caption split-caption-title pre-form">
+                              <div class="origen-grid-item">
+                                <p class="t-bold t-large loading-split ">¿Tienes preguntas? ¿Quieres conocer precios y tarifas para tu proyecto o marca?<span> Escríbenos por correo o WhatsApp y empecemos a crear.</span>
+                                </p>
+                                  <a  class="btn btn-default-icon-small  btn-default-accent slide-right margen-boton-arriba" href="https://api.whatsapp.com/send?phone=573170553536&text=Hola%20Origen.haus,%20su%20sitio%20web%20es%20incre%C3%ADble%20y%20quiero%20que%20trabajemos%20juntos">
+                                    <span class="btn-caption">Escríbenos por WhatsApp</span>
+                                    <i class="ph ph-whatsapp-logo"></i>
+                                  </a> 
+                                  <a  class="btn btn-default-icon-small  btn-default-outline slide-right-up margen-boton-arriba" href="mailto:hola@origen.haus?subject=Queremos%20trabajar%20con%20ustedes&body=Hola%20Origen.haus%2C%20vi%20su%20sitio%20web%20y%20estoy%20encantado%2C%20queremos%20trabajar%20juntos.%20">
+                                    <span class="btn-caption">Escríbenos por email</span>
+                                    <i class="ph ph-envelope"></i>
+                                  </a>  
+                              </div>                            
+                            </div>
+        
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="origen-block">
+            <div class="fullwidth-text headline-email-text bottom-text-small origen-grid-item">
+              <div class="fullwidth-text__wrap">
+                <a class="fullwidth-text__content small accent active-cursor" data-cursor-text="Cuéntanos tu idea" href="mailto:hola@origen.haus?subject=Queremos%20trabajar%20con%20ustedes&body=Hola%20Origen.haus%2C%20vi%20su%20sitio%20web%20y%20estoy%20encantado%2C%20queremos%20trabajar%20juntos.%20">
+                  <span class="anim-uni-chars">hola@origen.haus</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+
+
+      </main>
+
 </MainLayout>
