@@ -1,12 +1,309 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import TalkSection from "../components/TalkSection.astro";
+import ClientsSection from "../components/ClientsSection.astro";
+const title = "Proyectos";
 ---
 
-<MainLayout title="Proyectos | Origen">
-  <section class="origen-section">
-    <div class="origen-container">
-      <h1>Proyectos</h1>
-      <p>Aquí construiremos el portafolio de proyectos de Origen.</p>
-    </div>
-  </section>
+<MainLayout
+  title="Proyectos | Origen.haus — Aquí es donde todo empieza"
+  description="Origen — Estudio creativo de branding, diseño web y contenido de marca"
+>
+    <main id=" origen-page-content" class=" origen-page-content inner-page-content">
+      
+      
+      <div class="blur-container">
+        <div class="blur-layer blur-1"></div>
+        <div class="blur-layer blur-2"></div>
+        <div class="blur-layer blur-3"></div>
+        <div class="blur-layer blur-4"></div>
+        <div class="blur-layer blur-5"></div>
+        <div class="blur-layer blur-6"></div>
+        <div class="blur-layer blur-7"></div>
+        <div class="blur-layer blur-8"></div>
+      </div>
+
+
+
+      <div class=" origen-section blur-section">
+        <div class=" origen-container grid-l-container">
+
+
+          <div class=" origen-block loading-wrap">
+            <div class="inner-headline margin-bottom-subtitle">
+              <div class="container-fluid p-0">
+                <div class="row g-0">
+                  <div class="col-12  origen-grid-item">
+  
+                    <div class="inner-headline__breadcrumbs loading-fade">
+                      <div class="breadcrumbs__nav">
+                        <span>
+                          <a href="/">
+                            <span class=" origen-scramble">Inicio</span>
+                          </a>
+                        </span>
+                        <span class="current-item">Proyectos
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+
+                    <div class="inner-headline__content has-large-title">
+                      <div class="container-fluid p-0">
+                        <div class="row g-0">
+                          <div class="col-12 col-xl-9  origen-grid-item">
+                            <div class="inner-headline__title pre-subtitle-large">
+                              <h1 class="large loading-split">Proyectos</h1>
+                            </div>
+                            <div class="inner-headline__subtitle loading-item">
+                              <p>Selección de nuestros <span>proyectos y clientes más destacados</span></p>
+                            </div>
+                          </div>
+                          <div class="col-12 col-xl-3  origen-grid-item">
+                            <div class="inner-headline__tags align-end-desktop tags-large-subtitle">
+                              <span class="tag tag-m meta-tag  origen-scramble loading-item">Sitio web</span>
+                              <span class="tag tag-m meta-tag  origen-scramble loading-item">Diseño</span>
+                              <span class="tag tag-m meta-tag  origen-scramble loading-item">Comunicaciones</span>
+                              <span class="tag tag-m meta-tag  origen-scramble loading-item">Estrategia digital</span>
+                              <span class="tag tag-m meta-tag  origen-scramble loading-item">Branding</span>
+                              <span class="tag tag-m meta-tag  origen-scramble loading-item">Marketing</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+
+      <div class=" origen-section blur-section pinned-section padding-bottom-projects">
+        <div class="pinned-section__inner">
+          <div class=" origen-container grid-l-container">
+
+
+            <div class=" origen-block loading-fade">
+              <div class=" origen-projects-grid">
+                <div class="container-fluid p-0">
+                  <div class="row g-0  origen-projects-grid__gallery">
+                    <div class="col-12 col-md-6 col-xl-4  origen-project-item animate-card-3">
+                      <a class=" origen-project-item__media  origen-img-anim active-cursor-permanent" data-cursor-text="Ver proyecto" href="https://inucleo.co" target="_blank">
+                        <img class=" origen-img-anim__absolute" src="img/works/showcase-grid-x3/inucleo-01.webp" alt="Imagen de proyecto">
+                        <img class=" origen-img-anim__absolute" src="img/works/showcase-grid-x3/inucleo-03.webp" alt="Imagen de proyecto">
+                        <img class=" origen-img-anim__absolute" src="img/works/showcase-grid-x3/inucleo-02.webp" alt="Imagen de proyecto">
+                        <img class=" origen-img-anim__main" src="img/works/showcase-grid-x3/inucleo-04.webp" alt="Imagen de proyecto">
+                      </a>
+                      <div class=" origen-project-item__caption">
+                        <div class=" origen-project-item__name">
+                          <a class="project-name-s" href="https://inucleo.co" target="_blank">iNúcleo Ingeniería</a>
+                          <p class="t-s">Desarrollamos su sitio web, identidad impresa y asesoramos su estrategia digital.</p>
+                        </div>
+                        
+                        <div class=" origen-project-item__tags">
+
+                          <span class="tag tag-s tag-medium origen-scramble">Sitio web</span>
+                          <span class="tag tag-s tag-medium origen-scramble">Comunicaciones</span>
+                          <span class="tag tag-s tag-medium origen-scramble">Diseño</span>
+                          <span class="tag tag-s tag-medium origen-scramble">Marketing</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4  origen-project-item animate-card-3">
+                      <a class=" origen-project-item__media  origen-img-anim active-cursor-permanent" data-cursor-text="Ver proyecto" href="https://lpcontadores.com" target="_blank">
+                        <img class=" origen-img-anim__absolute" src="img/works/showcase-grid-x3/pr02-04.webp" alt="Imagen de proyecto">
+                        <img class=" origen-img-anim__absolute" src="img/works/showcase-grid-x3/pr02-05.webp" alt="Imagen de proyecto">
+                        <img class=" origen-img-anim__absolute" src="img/works/showcase-grid-x3/pr02-03.webp" alt="Imagen de proyecto">
+                        <img class=" origen-img-anim__absolute" src="img/works/showcase-grid-x3/pr02-02.webp" alt="Imagen de proyecto">
+                        <img class=" origen-img-anim__main" src="img/works/showcase-grid-x3/pr02-01.webp" alt="Imagen de proyecto">
+                      </a>
+                      <div class=" origen-project-item__caption">
+                        <div class=" origen-project-item__name">
+                          <a class="project-name-s" href="https://lpcontadores.com" target="_blank">LP Contadores</a>
+                          <p class="t-s">Sitio web moderno, dinámico y pensado en el usuario. Asesoramos la estrategia digital de LP Contadores.</p>
+                        </div>
+                        <div class=" origen-project-item__tags">
+                          <span class="tag tag-s tag-medium  origen-scramble">Sitio web</span>
+                          <span class="tag tag-s tag-medium  origen-scramble">Comunicaciones</span>
+                          <span class="tag tag-s tag-medium  origen-scramble">Diseño</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4  origen-project-item animate-card-3">
+                      <a class=" origen-project-item__media  origen-img-anim active-cursor-permanent" data-cursor-text="Ver proyecto" href="https://lepli.com.co" target="_blank">
+                        <img class=" origen-img-anim__absolute" src="img/works/showcase-grid-x3/lepli-02.webp" alt="Imagen de proyecto">
+                        <img class=" origen-img-anim__absolute" src="img/works/showcase-grid-x3/lepli-03.webp" alt="Imagen de proyecto">
+                        <img class=" origen-img-anim__absolute" src="img/works/showcase-grid-x3/lepli-04.webp" alt="Imagen de proyecto">
+                        <img class=" origen-img-anim__absolute" src="img/works/showcase-grid-x3/lepli-05.webp" alt="Imagen de proyecto">
+                        <img class=" origen-img-anim__absolute" src="img/works/showcase-grid-x3/lepli-06.webp" alt="Imagen de proyecto">
+                        <img class=" origen-img-anim__main" src="img/works/showcase-grid-x3/lepli-01.webp" alt="Imagen de proyecto">
+                      </a>
+                      <div class=" origen-project-item__caption">
+                        <div class=" origen-project-item__name">
+                          <a class="project-name-s" href="https://https://lepli.com.co" target="_blank">Ecosistema Lepli</a>
+                          <p class="t-s">Diseñamos las landings de producto<br> y el ecosistema web de Lepli.</p>
+                        </div>
+                        <div class=" origen-project-item__tags">
+                          <span class="tag tag-s tag-medium  origen-scramble">Sitio web</span>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4  origen-project-item animate-card-3">
+                      <a class=" origen-project-item__media  origen-img-anim active-cursor-permanent" data-cursor-text="Ver proyecto" href="https://enfocarte.co" target="_blank">
+                        <img class=" origen-img-anim__absolute" src="img/works/showcase-sticky/pr01-01.webp" alt="Imagen de proyecto">
+                        <img class=" origen-img-anim__absolute" src="img/works/showcase-sticky/pr01-02.webp" alt="Imagen de proyecto">
+                        <img class=" origen-img-anim__absolute" src="img/works/showcase-sticky/pr01-04.webp" alt="Imagen de proyecto">
+                        <img class=" origen-img-anim__absolute" src="img/works/showcase-sticky/pr01-05.webp" alt="Imagen de proyecto">
+                        <img class=" origen-img-anim__absolute" src="img/works/showcase-sticky/pr01-06.webp" alt="Imagen de proyecto">
+                        <img class=" origen-img-anim__main" src="img/works/showcase-sticky/pr01-03.webp" alt="Imagen de proyecto">
+                      </a>
+                      <div class=" origen-project-item__caption">
+                        <div class=" origen-project-item__name">
+                          <a class="project-name-s" href="https://enfocarte.co" target="_blank">Enfocarte</a>
+                           <p class="t-s">Asesoramos sus comunicaciones internas y externas, sitio web, marketing y diseño.</p>
+                        </div>
+                        <div class=" origen-project-item__tags">
+                          <span class="tag tag-s tag-medium  origen-scramble">Sitio web</span>
+                          <span class="tag tag-s tag-medium  origen-scramble">Marketing</span>
+                          <span class="tag tag-s tag-medium  origen-scramble">Comunicaciones</span>
+                          <span class="tag tag-s tag-medium  origen-scramble">Diseño</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4  origen-project-item animate-card-3">
+                      <a class=" origen-project-item__media  origen-img-anim active-cursor-permanent" data-cursor-text="Ver proyecto" href="https://instagram.com/caporalhamburgueseria" target="_blank">
+                        <img class=" origen-img-anim__absolute" src="img/works/showcase-grid-x3/caporal-02.webp" alt="Imagen de proyecto">
+                        <img class=" origen-img-anim__absolute" src="img/works/showcase-grid-x3/caporal-03.webp" alt="Imagen de proyecto">
+                        <img class=" origen-img-anim__absolute" src="img/works/showcase-grid-x3/caporal-04.webp" alt="Imagen de proyecto">
+                        <img class=" origen-img-anim__absolute" src="img/works/showcase-grid-x3/caporal-05.webp" alt="Imagen de proyecto">
+                        <img class=" origen-img-anim__absolute" src="img/works/showcase-grid-x3/caporal-06.webp" alt="Imagen de proyecto">
+                        <img class=" origen-img-anim__main" src="img/works/showcase-grid-x3/caporal-01.webp" alt="Imagen de proyecto">
+                      </a>
+                      <div class=" origen-project-item__caption">
+                        <div class=" origen-project-item__name">
+                          <a class="project-name-s" href="https://instagram.com/caporalhamburgueseria" target="_blank">Caporal Hambuguesería</a>
+                          <p class="t-s">Llevamos a cabo su estrategia digital, fotografía y redes sociales.</p>
+                        </div>
+                        <div class=" origen-project-item__tags">
+                          <span class="tag tag-s tag-medium  origen-scramble">Estrategia digital</span>
+                          <span class="tag tag-s tag-medium  origen-scramble">Fotografía</span>
+                          <span class="tag tag-s tag-medium  origen-scramble">Audiovisuales</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4  origen-project-item animate-card-3">
+                      <a class=" origen-project-item__media  origen-img-anim active-cursor-permanent" data-cursor-text="Ver proyecto">
+                        <img class=" origen-img-anim__absolute" src="img/works/showcase-grid-x3/agralema-02.webp" alt="Imagen de proyecto">
+                        <img class=" origen-img-anim__absolute" src="img/works/showcase-grid-x3/agralema-03.webp" alt="Imagen de proyecto">
+                        <img class=" origen-img-anim__absolute" src="img/works/showcase-grid-x3/agralema-04.webp" alt="Imagen de proyecto">
+                        <img class=" origen-img-anim__absolute" src="img/works/showcase-grid-x3/agralema-05.webp" alt="Imagen de proyecto">
+                        <img class=" origen-img-anim__main" src="img/works/showcase-grid-x3/agralema-01.webp" alt="Imagen de proyecto">
+                      </a>
+                      <div class=" origen-project-item__caption">
+                        <div class=" origen-project-item__name">
+                          <a class="project-name-s">Agralema</a>
+                          <p class="t-s">Diseño de marca e identidad corporativa.</p>
+                        </div>
+                        <div class=" origen-project-item__tags">
+                          <span class="tag tag-s tag-medium  origen-scramble">Branding</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-xl-4  origen-project-item animate-card-3">
+                      <a class=" origen-project-item__media  origen-img-anim active-cursor-permanent" data-cursor-text="Ver proyecto" href="https://instagram.com/mistura_____" target="_blank">
+                        <img class=" origen-img-anim__absolute" src="img/works/showcase-grid-x3/mistura-01.webp" alt="Imagen de proyecto">
+                        <img class=" origen-img-anim__absolute" src="img/works/showcase-grid-x3/mistura-03.webp" alt="Imagen de proyecto">
+                        <img class=" origen-img-anim__absolute" src="img/works/showcase-grid-x3/mistura-04.webp" alt="Imagen de proyecto">
+                        <img class=" origen-img-anim__absolute" src="img/works/showcase-grid-x3/mistura-04.webp" alt="Imagen de proyecto">
+                        <img class=" origen-img-anim__main" src="img/works/showcase-grid-x3/mistura-02.webp" alt="Imagen de proyecto">
+                      </a>
+                      <div class=" origen-project-item__caption">
+                        <div class=" origen-project-item__name">
+                          <a class="project-name-s" href="https://instagram.com/mistura_____" target="_blank">Mistura</a>
+                          <p class="t-s">Diseño de marca y asesoría.</p>
+                        </div>
+                        <div class=" origen-project-item__tags">
+                          <span class="tag tag-s tag-medium  origen-scramble">Branding</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-xl-4  origen-project-item animate-card-3">
+                      <a class=" origen-project-item__media  origen-img-anim active-cursor-permanent" data-cursor-text="Ver proyecto">
+                        <img class=" origen-img-anim__absolute" src="img/works/showcase-grid-x3/tierracoll-02.webp" alt="Imagen de proyecto">
+                        <img class=" origen-img-anim__absolute" src="img/works/showcase-grid-x3/tierracoll-03.webp" alt="Imagen de proyecto">
+                        <img class=" origen-img-anim__absolute" src="img/works/showcase-grid-x3/tierracoll-04.webp" alt="Imagen de proyecto">
+                        <img class=" origen-img-anim__absolute" src="img/works/showcase-grid-x3/tierracoll-05.webp" alt="Imagen de proyecto">
+                        <img class=" origen-img-anim__main" src="img/works/showcase-grid-x3/tierracoll-01.webp" alt="Imagen de proyecto">
+                      </a>
+                      <div class=" origen-project-item__caption">
+                        <div class=" origen-project-item__name">
+                          <a class="project-name-s">Tierracoll</a>
+                          <p class="t-s">Diseño de marca e identidad corporativa.</p>
+                        </div>
+                        <div class=" origen-project-item__tags">
+                          <span class="tag tag-s tag-medium  origen-scramble">Branding</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-xl-4  origen-project-item animate-card-3">
+                      <a class=" origen-project-item__media  origen-img-anim active-cursor-permanent" data-cursor-text="Ver proyecto" href="https://instagram.com/optica_lindavision2026" target="_blank">
+                        <img class=" origen-img-anim__absolute" src="img/works/showcase-grid-x3/lindavision-01.webp" alt="Imagen de proyecto">
+                        <img class=" origen-img-anim__absolute" src="img/works/showcase-grid-x3/lindavision-03.webp" alt="Imagen de proyecto">
+                        <img class=" origen-img-anim__absolute" src="img/works/showcase-grid-x3/lindavision-04.webp" alt="Imagen de proyecto">
+                        <img class=" origen-img-anim__absolute" src="img/works/showcase-grid-x3/lindavision-05.webp" alt="Imagen de proyecto">
+                        <img class=" origen-img-anim__main" src="img/works/showcase-grid-x3/lindavision-02.webp" alt="Imagen de proyecto">
+                      </a>
+                      <div class=" origen-project-item__caption">
+                        <div class=" origen-project-item__name">
+                          <a class="project-name-s" href="https://instagram.com/optica_lindavision2026" target="_blank">Lindavisión</a>
+                           <p class="t-s">Diseño de marca e identidad corporativa.</p>
+                        </div>
+                        <div class=" origen-project-item__tags">
+                          <span class="tag tag-s tag-medium  origen-scramble">Branding</span>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4  origen-project-item animate-card-3">
+                      <a class=" origen-project-item__media  origen-img-anim active-cursor-permanent" data-cursor-text="Ver proyecto">
+                        <img class=" origen-img-anim__absolute" src="img/works/showcase-grid-x3/cuare-02.webp" alt="Imagen de proyecto">
+                        <img class=" origen-img-anim__absolute" src="img/works/showcase-grid-x3/cuare-03.webp" alt="Imagen de proyecto">
+                        <img class=" origen-img-anim__main" src="img/works/showcase-grid-x3/cuare-01.webp" alt="Imagen de proyecto">
+                      </a>
+                      <div class=" origen-project-item__caption">
+                        <div class=" origen-project-item__name">
+                          <a class="project-name-s">Microcuenca Cuaré</a>
+                          <p class="t-s">Diseño de marca e identidad corporativa.</p>
+                        </div>
+                        <div class=" origen-project-item__tags">
+                          <span class="tag tag-s tag-medium  origen-scramble">Branding</span>
+                        </div>
+                      </div>
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+
+          </div>
+          <div class="pinned-section__trigger"></div>
+        </div>
+      </div>
+<ClientsSection />
+<TalkSection />
+
+    </main>
 </MainLayout>
