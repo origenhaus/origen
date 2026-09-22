@@ -24,4 +24,25 @@
     <span class="origen-loader__caption">Cargando</span>
   </div>
 </div>
+<script>
+  const hideOrigenLoader = () => {
+    const loader = document.getElementById("origen-loader");
 
+    if (!loader) return;
+
+    loader.classList.add("is-hidden");
+    document.documentElement.classList.remove("is-loading");
+    document.body.classList.remove("is-loading");
+
+    setTimeout(() => {
+      loader.style.display = "none";
+    }, 800);
+  };
+
+  window.addEventListener("load", () => {
+    setTimeout(hideOrigenLoader, 300);
+  });
+
+  // Failsafe: nunca permitir que el loader bloquee la página
+  setTimeout(hideOrigenLoader, 2000);
+</script>

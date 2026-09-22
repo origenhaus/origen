@@ -16785,7 +16785,9 @@ form textarea:required:valid {
   -ms-flex-direction: column;
   flex-direction: column;
   gap: 1.2rem;
-  margin-bottom: 5.4rem
+  margin-bottom: 5.4rem;
+  align-content: center;
+  align-items: center;
 }
 
 .origen-clients__item:last-of-type {
@@ -16807,7 +16809,8 @@ form textarea:required:valid {
 
 .origen-clients__logo {
   width: 100%;
-  height: 4.2rem
+  align-items: center;
+  height: 6rem;
 }
 
 .origen-clients__logo img,
@@ -16823,7 +16826,7 @@ form textarea:required:valid {
 
 @media only screen and (min-width:768px) {
   .origen-clients__logo {
-    height: 4.8rem
+    height: 10rem
   }
 }
 
